@@ -5,7 +5,7 @@ $deleteStudentID = $_GET['id']; //confirming that we are receiving the particula
 echo "$deleteStudentID";
 
 $query = $conn -> prepare("DELETE From school_table WHERE id=? "); #Here, prepare should be a lowercase
-$query->execute([$editStudentID] );
+$query->execute([$deleteStudentID] );
 
 //echo "<script>alert('Data Updated successfully!');</script>"; //since, this wasn't being seen another way of redirecting
 
